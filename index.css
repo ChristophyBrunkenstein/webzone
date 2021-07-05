@@ -1,0 +1,124 @@
+body{
+    background-image: url('img/spacejambg.jpg');
+    background-size: 119px 77px;
+}
+
+
+
+
+
+.wrapper{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-container {
+  position: relative;
+  width: 24em;
+  height: 24em;
+  padding: 2.8em;
+  border-radius: 50%;
+  margin: 1.75em auto 0;
+}
+.circle-container a {
+  display: block;
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 4em; height: 4em;
+  margin: -2em;
+}
+
+
+.circle-container img { display: block; width: 100%; }
+.deg0 { transform: rotate(10deg) translate(12em) rotate(-10deg); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(60deg) translate(10em) rotate(-60deg); }
+.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+.deg180 { transform: rotate(5deg) translate(-13em) rotate(-5deg); }
+.deg225 { transform: rotate(225deg) translate(14em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(13em) rotate(-315deg); }
+.deg270 { transform: rotate(270deg) translate(14em) rotate(-270deg); }
+.center{ transform: rotate(220deg) translate(6em) rotate(-220deg);}
+
+#spaceship{
+  width: 9em; height: 4.5em;
+}
+
+#logo{
+  width: 12em; height: 10em;
+}
+#bebop{
+  width: 6em; height: 6em;
+}
+#doge{
+  width: 5em; height: 5em;
+}
+#kip{
+  width: 5em; height: 7em;
+}
+
+#bottomP {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 13px;
+}
+
+#bottomP2{
+color: #ff0000;
+position: relative;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 13px;
+} 
+
+ 
+.circle-container.dance {
+  animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-24px, -24px, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(24px, 16px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-16px, -24px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(16px, 36px, 0);
+  }
+} 
+
+/* @keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  } */
+} 
