@@ -1,11 +1,6 @@
 body{
-    background-image: url('img/spacejambg.jpg');
-    background-size: 119px 77px;
+    background-image: url('img/bg_stars.gif');
 }
-
-
-
-
 
 .wrapper{
   margin: 0;
@@ -60,9 +55,9 @@ body{
 }
 
 #bottomP {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  bottom: 20px;
+  bottom: -20%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
   color: red;
@@ -105,20 +100,60 @@ font-size: 13px;
   }
 } 
 
-/* @keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
+@media screen and (max-width: 600px){
+  .circle-container{ 
+    border: 1px solid red;
+  position: relative;
+  width: 16em;
+  height: 16em;
+  padding: 1.8em;
+  border-radius: 50%;
+  margin: 1.em auto 0;
+ }
+ .circle-container a {
+  display: block;
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 3em; height: 3em;
+  margin: -2em;
+}
 
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
+.circle-container img { display: block; width: 100%; }
+.deg0 { transform: rotate(10deg) translate(7em) rotate(-10deg); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(60deg) translate(6em) rotate(-60deg); }
+.deg135 { transform: rotate(135deg) translate(6em) rotate(-135deg); }
+.deg180 { transform: rotate(5deg) translate(-7em) rotate(-5deg); }
+.deg225 { transform: rotate(225deg) translate(7em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(7.5em) rotate(-315deg); }
+.deg270 { transform: rotate(270deg) translate(7em) rotate(-270deg); }
+.center{ transform: rotate(220deg) translate(3em) rotate(-220deg);}
 
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  } */
-} 
+#spaceship{
+  width: 6em; height: 3em;
+}
+
+#logo{
+  width: 9em; height: 8em;
+}
+#bebop{
+  width: 4em; height: 4em;
+}
+#doge{
+  width: 4em; height: 4em;
+}
+#kip{
+  width: 3.5em; height: 5em;
+}
+
+#bottomP {
+  position: fixed;
+  left: 50%;
+  bottom: -200px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 13px;
+}
+
+}
