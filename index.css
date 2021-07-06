@@ -102,7 +102,6 @@ font-size: 13px;
 
 @media screen and (max-width: 600px){
   .circle-container{ 
-    border: 1px solid red;
   position: relative;
   width: 16em;
   height: 16em;
